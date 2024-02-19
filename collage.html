@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Picture Collage</title>
+</head>
+
+<style>
+
+img{
+width: 100%;
+height: 100%;
+}
+.row{
+
+height: 400px;
+display: flex;
+gap:5px;
+margin-bottom: 5px;
+
+}
+
+.row > div{
+flex: 1;
+
+}
+
+
+.vertical-collage img{
+height: calc((100%-5px)/2);
+
+
+
+}
+
+
+
+.square-collage{
+
+display: grid;
+grid-template-columns: repeat(2, 1fr);
+
+gap: 5px;
+
+}
+
+/* Responsive Media Quary */
+ 
+@media screen and (max-width:576px){
+.row{
+flex-direction: column;
+height: auto;
+}
+.square-collage{
+grid-template-columns:1fr ;
+
+}
+
+} 
+
+/* medium devic */
+
+@media screen and (min-width:576px) and (max-width:992px) {
+    
+    .row{
+flex-direction: column;
+height: auto;
+}
+
+}
+
+
+</style>
+
+<body>
+    <header>
+
+<h1>
+
+My picture Collage
+
+</h1>
+
+
+
+    </header>
+<main>
+
+<section>
+
+    <div class="row">
+
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRvsrnid3pc6Os7BshtuMviq4KIQCG4OhquUtUv9fUOJEXIShgIlqpt1IK0YeSj5ZUvv_g&usqp=CAU" alt="">
+        </div>
+
+<div class="row">
+<div>
+<img src="https://scontent.fdac23-1.fna.fbcdn.net/v/t39.30808-6/426331044_914222633545813_6149570999549966364_n.jpg?_nc_cat=100&ccb=1-7&_nc_sid=efb6e6&_nc_eui2=AeESsNdNXnWhhU8rPfi6BpMZhaZBg1vcY6GFpkGDW9xjoao0TcDylYG98a6XcSw_GwpMv8i0UEXUytP149nAWC86&_nc_ohc=qE16lV9Mj9YAX_K3hpx&_nc_ht=scontent.fdac23-1.fna&oh=00_AfCcmd-5_hnKSEyHJ7QAaX2REAWzMuKFpSZkCFcv3zqTQA&oe=65CD8C75" alt="">
+</div>
+<div>
+<img src="https://scontent.fdac23-1.fna.fbcdn.net/v/t39.30808-6/426092626_913019403666136_3945332208456116340_n.jpg?_nc_cat=101&ccb=1-7&_nc_sid=783fdb&_nc_eui2=AeGxS-cDU0dmBgnHPTGtuP-BmSxcolcGTc2ZLFyiVwZNzdmg9uNpcs6IuetIyASr5ia97WmKi3zNa6xeR4Ur8rP9&_nc_ohc=LaEJW2GNX6IAX8F2-to&_nc_ht=scontent.fdac23-1.fna&oh=00_AfCRc1XzSmVjINOWkG526h_BMdtMgAmnvcEFjL_hs5iFPA&oe=65CDBEF8" alt="">
+</div>
+<div class="vertical-collage">
+<img src="https://scontent.fdac23-1.fna.fbcdn.net/v/t39.30808-6/422942395_906260551008688_4131456131503419077_n.jpg?_nc_cat=108&ccb=1-7&_nc_sid=9c7eae&_nc_eui2=AeHRes3i4fXdy4fZ3EA95D90lkWYutvpKEqWRZi62-koSv4kSj1P6bmd3OHU_1ia6SgEcLPOjqpxHn31jhaI3ilX&_nc_ohc=GS9bENwSYswAX-XQT-m&_nc_ht=scontent.fdac23-1.fna&oh=00_AfC1K9tuhGVRSmRycV4eb6PmsJ405CSINQ9sgmXEtFmlrQ&oe=65CDA6AC" alt="">
+<img src="https://images.pexels.com/photos/1402787/pexels-photo-1402787.jpeg?auto=compress&cs=tinysrgb&w=600" alt="">
+ 
+</div>
+</div>
+
+<div class="row">
+    <div>
+<img src="https://images.pexels.com/photos/1213447/pexels-photo-1213447.jpeg?auto=compress&cs=tinysrgb&w=300" alt="">
+
+</div>
+
+
+    <div class="square-collage">
+    <img src="https://images.pexels.com/photos/1525041/pexels-photo-1525041.jpeg?auto=compress&cs=tinysrgb&w=300" alt="">
+    <img src="https://images.pexels.com/photos/1525041/pexels-photo-1525041.jpeg?auto=compress&cs=tinysrgb&w=300" alt="">
+    <img src="https://images.pexels.com/photos/1525041/pexels-photo-1525041.jpeg?auto=compress&cs=tinysrgb&w=300" alt="">
+    <img src="https://images.pexels.com/photos/1525041/pexels-photo-1525041.jpeg?auto=compress&cs=tinysrgb&w=300" alt="">
+
+</div>
+
+<div>
+
+
+<img src="https://images.pexels.com/photos/1629998/pexels-photo-1629998.jpeg?auto=compress&cs=tinysrgb&w=300" alt="">
+
+</div>
+</div>
+
+</section>
+
+</main>
+
+</body>
+</html>
